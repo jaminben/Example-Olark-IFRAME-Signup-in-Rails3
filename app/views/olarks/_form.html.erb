@@ -1,0 +1,29 @@
+<%= form_for(@olark) do |f| %>
+  <% if @olark.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@olark.errors.count, "error") %> prohibited this olark from being saved:</h2>
+
+      <ul>
+      <% @olark.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :olark_key %><br />
+    <%= f.text_field :olark_key %>
+  </div>
+  <div class="field">
+    <%= f.label :olark_secret %><br />
+    <%= f.text_field :olark_secret %>
+  </div>
+  <div class="field">
+    <%= f.label :olark_code %><br />
+    <%= f.text_area :olark_code %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

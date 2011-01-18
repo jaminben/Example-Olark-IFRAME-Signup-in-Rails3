@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  olark_key: MyString
+  olark_secret: MyString
+  olark_code: MyText
+
+two:
+  olark_key: MyString
+  olark_secret: MyString
+  olark_code: MyText

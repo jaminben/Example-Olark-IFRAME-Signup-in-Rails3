@@ -1,0 +1,27 @@
+<h1>Listing olarks</h1>
+
+<table>
+  <tr>
+    <th>Olark key</th>
+    <th>Olark secret</th>
+    <th>Olark html</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @olarks.each do |olark| %>
+  <tr>
+    <td><%= olark.olark_key %></td>
+    <td><%= olark.olark_secret %></td>
+    <td><%= olark.olark_html %></td>
+    <td><%= link_to 'Show', olark %></td>
+    <td><%= link_to 'Edit', edit_olark_path(olark) %></td>
+    <td><%= link_to 'Destroy', olark, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Olark', new_olark_path %>

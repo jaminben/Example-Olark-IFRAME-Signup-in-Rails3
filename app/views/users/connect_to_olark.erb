@@ -1,0 +1,7 @@
+<h2>Connect to Olark: <%=@olark_iframe_url%> </h2>
+
+<%=link_to 'view olark embed code', :action => 'show_olark', :id=>@user.id%>
+
+
+
+<iframe src="<%=@olark_iframe_url%>" width="600" height="600"></iframe>
